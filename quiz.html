@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - CodeKids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">👦 CodeKids</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="coders.html">Famous Coders</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>🧠 Fun Coding Quiz</h1>
+        <p>15 questions • 3 difficulty levels • Test your knowledge!</p>
+    </div>
+
+    <section class="section">
+        <div class="quiz-container">
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <p id="questionCounter" class="question-counter">Question 1 of 15</p>
+
+            <!-- Level Legend -->
+            <div class="level-legend">
+                <span class="level-badge level-easy">Easy</span>
+                <span class="level-badge level-medium">Medium</span>
+                <span class="level-badge level-hard">Hard</span>
+            </div>
+
+            <div id="quizBox">
+                <h3 id="question">Loading question...</h3>
+                <div id="options" class="options"></div>
+                <p id="quizFeedback" class="feedback"></p>
+                <button class="btn small" id="nextBtn" onclick="nextQuestion()" style="display:none;">Next ➡️</button>
+            </div>
+
+            <div id="resultBox" class="result-box" style="display:none;">
+                <h3>🎉 Quiz Complete!</h3>
+                <p id="finalScore"></p>
+                <button class="btn" onclick="restartQuiz()">Try Again 🔄</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 CodeKids | Made with ❤️ for young coders</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

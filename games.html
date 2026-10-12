@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Gallery - CodeKids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">👦 CodeKids</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="coders.html">Famous Coders</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="games.html" class="active">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>🎮 Games Gallery</h1>
+        <p>Play coding-related games made for kids!</p>
+    </div>
+
+    <section class="section">
+        <h2>🎯 Featured Game</h2>
+        <p class="subtitle">Try our "Guess the Number" game!</p>
+
+        <div class="game-box">
+            <h3>🎲 Guess the Number</h3>
+            <p>I'm thinking of a number between 1 and 20.<br>Can you guess it in 5 tries?</p>
+            <br>
+            <input type="number" id="guessInput" min="1" max="20" placeholder="Enter 1-20">
+            <button class="btn small" onclick="checkGuess()">Guess! 🎯</button>
+            <button class="btn small secondary" onclick="restartGame()">Restart 🔄</button>
+            <p id="gameMessage" class="feedback"></p>
+            <p id="attemptsLeft" class="attempts"></p>
+        </div>
+    </section>
+
+    <section class="section alt-bg">
+        <h2>🎡 More Games Coming Soon!</h2>
+        <p class="subtitle">Here are games you can build after learning coding:</p>
+
+        <div class="game-gallery">
+
+            <div class="game-card">
+                <div class="game-icon">🐍</div>
+                <h3>Snake Game</h3>
+                <p>Classic game where a snake eats food and grows. Learn loops & arrays!</p>
+                <button class="btn small" disabled>Coming Soon</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">❌⭕</div>
+                <h3>Tic Tac Toe</h3>
+                <p>Play against a friend or computer. Learn conditions & logic!</p>
+                <button class="btn small" disabled>Coming Soon</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🧠</div>
+                <h3>Memory Match</h3>
+                <p>Flip cards to find matching pairs. Learn arrays & events!</p>
+                <button class="btn small" disabled>Coming Soon</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🎨</div>
+                <h3>Color Painter</h3>
+                <p>Draw on the screen with your mouse. Learn canvas & events!</p>
+                <button class="btn small" disabled>Coming Soon</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🔢</div>
+                <h3>Math Challenge</h3>
+                <p>Solve math problems against the clock. Learn timers!</p>
+                <button class="btn small" disabled>Coming Soon</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🚀</div>
+                <h3>Space Shooter</h3>
+                <p>Shoot asteroids in space. Learn game loops & collision!</p>
+                <button class="btn small" disabled>Coming Soon</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 CodeKids | Made with ❤️ for young coders</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

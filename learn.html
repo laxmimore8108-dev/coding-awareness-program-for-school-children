@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Coding - CodeKids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">👦 CodeKids</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn.html" class="active">Learn</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="coders.html">Famous Coders</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <h1>📚 What is Coding?</h1>
+        <p>Let's understand coding in a simple and fun way!</p>
+    </div>
+
+    <!-- SECTION 1 -->
+    <section class="section">
+        <h2>🤔 Coding = Giving Instructions</h2>
+        <p class="subtitle">Just like telling a robot what to do!</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <h3>Instructions</h3>
+                <p>Coding means giving step-by-step instructions to a computer.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧩</div>
+                <h3>Problem Solving</h3>
+                <p>Break big problems into small pieces and solve them one by one.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Creativity</h3>
+                <p>Build games, websites, apps, animations — anything you imagine!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATTERN DEMO -->
+    <section class="section alt-bg">
+        <h2>🎯 Try It: Make a Star Pattern!</h2>
+        <p class="subtitle">Enter a number (1-10) and see coding magic happen:</p>
+
+        <div class="demo-box">
+            <input type="number" id="patternInput" min="1" max="10" value="5">
+            <button class="btn small" onclick="drawPattern()">Draw Pattern ⭐</button>
+            <pre id="patternOutput" class="output">Your pattern will appear here...</pre>
+        </div>
+    </section>
+
+    <!-- KEY IDEAS -->
+    <section class="section">
+        <h2>🔁 Key Ideas in Coding</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🔁</div>
+                <h3>Loops</h3>
+                <p>Repeat instructions many times — like printing 10 stars!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">❓</div>
+                <h3>Conditions</h3>
+                <p>Make decisions: "If it's raining, take an umbrella."</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <h3>Variables</h3>
+                <p>Boxes that store information — like your name or age.</p>
+            </div>
+        </div>
+
+        <br><br>
+        <a href="languages.html" class="btn">Next: Programming Languages →</a>
+    </section>
+
+    <footer>
+        <p>© 2024 CodeKids | Made with ❤️ for young coders</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

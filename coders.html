@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Coders - CodeKids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">👦 CodeKids</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="coders.html" class="active">Famous Coders</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>🌟 Famous Coders Who Changed the World</h1>
+        <p>Click on any card to learn more about them!</p>
+    </div>
+
+    <section class="section">
+        <h2>👨‍💻 Legends of Coding</h2>
+        <p class="subtitle">👆 Click on a card to see full details</p>
+
+        <div class="coder-grid">
+
+            <div class="coder-card clickable" onclick="openCoder('ada')">
+                <div class="coder-avatar">👩‍🔬</div>
+                <h3>Ada Lovelace</h3>
+                <p class="role">First Programmer (1815–1852)</p>
+                <p>Wrote the world's first computer program — before computers existed!</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('alan')">
+                <div class="coder-avatar">🧠</div>
+                <h3>Alan Turing</h3>
+                <p class="role">Father of Computer Science</p>
+                <p>Cracked the Enigma code in WWII and created the "Turing Machine".</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('grace')">
+                <div class="coder-avatar">👩‍💻</div>
+                <h3>Grace Hopper</h3>
+                <p class="role">Queen of Software</p>
+                <p>Invented the first compiler and popularized the term "bug".</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('guido')">
+                <div class="coder-avatar">🐍</div>
+                <h3>Guido van Rossum</h3>
+                <p class="role">Creator of Python</p>
+                <p>Created Python in 1991 to make coding simple and fun.</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('tim')">
+                <div class="coder-avatar">💡</div>
+                <h3>Tim Berners-Lee</h3>
+                <p class="role">Inventor of the Web</p>
+                <p>Created the World Wide Web in 1989.</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('margaret')">
+                <div class="coder-avatar">🚀</div>
+                <h3>Margaret Hamilton</h3>
+                <p class="role">Led Apollo Space Mission</p>
+                <p>Wrote the code that landed Apollo 11 on the Moon.</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('linus')">
+                <div class="coder-avatar">🧑‍💻</div>
+                <h3>Linus Torvalds</h3>
+                <p class="role">Creator of Linux</p>
+                <p>Made Linux and Git — used by millions of developers.</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+            <div class="coder-card clickable" onclick="openCoder('katherine')">
+                <div class="coder-avatar">🌟</div>
+                <h3>Katherine Johnson</h3>
+                <p class="role">NASA Math Genius</p>
+                <p>Calculated flight paths for NASA missions.</p>
+                <p class="click-hint">Click to read more →</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== MODAL POPUP ===== -->
+    <div id="coderModal" class="modal-overlay" onclick="closeCoder(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeCoder()">✖</button>
+
+            <div class="modal-header">
+                <div class="modal-avatar" id="modalAvatar">👤</div>
+                <h2 id="modalName">Name</h2>
+                <p class="modal-role" id="modalRole">Role</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>📖 Short Bio</h3>
+                    <p id="modalBio">Bio here...</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🏆 Key Achievements</h3>
+                    <ul id="modalAchievements"></ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>💡 Fun Fact</h3>
+                    <p id="modalFact">Fun fact here...</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>📅 Quick Info</h3>
+                    <p id="modalInfo"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section alt-bg">
+        <h2>💭 What Can YOU Become?</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🎮</div>
+                <h3>Game Developer</h3>
+                <p>Create the next Minecraft or Fortnite!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <h3>Robotics Engineer</h3>
+                <p>Build robots that help people.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Space Scientist</h3>
+                <p>Send rockets to Mars with your code.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>App Developer</h3>
+                <p>Make apps used by millions.</p>
+            </div>
+        </div>
+
+        <br><br>
+        <a href="quiz.html" class="btn">Test Your Knowledge →</a>
+    </section>
+
+    <footer>
+        <p>© 2024 CodeKids | Made with ❤️ for young coders</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
